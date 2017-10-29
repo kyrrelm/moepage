@@ -26,7 +26,7 @@ export default class Container extends React.Component {
 
 const styles = StyleSheet.create({
   header: {
-    color: '#fff',
+    color: '#03006b',
     overflowX: 'hidden',
     position: 'relative',
     textAlign: 'center',
