@@ -28,8 +28,8 @@ const styles = StyleSheet.create({
     color: '#fff',
     overflowX: 'hidden',
     position: 'relative',
-    'text-align': 'center',
-    'text-shadow': '0px 0px 1px rgba(0,0,0,0.5)',
+    textAlign: 'center',
+    textShadow: '0px 0px 1px rgba(0,0,0,0.5)',
     h1: {
       'font-size': '32px',
     },
