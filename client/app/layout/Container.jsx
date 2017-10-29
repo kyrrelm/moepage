@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
       'font-weight': '300',
       'margin-top': '0.5em',
     },
-    marginBottom: '1rem',
+    marginBottom: '2rem',
   },
   cover: {
-    'clip-path': 'polygon(0 0, 100% 0, 100% 90%, 0 75%)',
+    'clip-path': 'polygon(0 0, 100% 0, 100% 95%, 0 80%)',
   },
   profile: {
     border: '3px solid white',
