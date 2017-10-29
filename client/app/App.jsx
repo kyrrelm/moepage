@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route } from 'react-router-dom';
 
-import AppLayout from './AppLayout.jsx';
+import AppLayout from './layout/AppLayout.jsx';
 
 ReactDOM.render(
   <HashRouter basename="/">

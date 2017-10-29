@@ -1,27 +1,30 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
+import Meny from './Meny.jsx';
 
 export default class Container extends React.Component {
   render() {
     return (
         <div >
           <div className={css(styles.header)}>
-            <img className={css(styles.cover)} src="../img/blueMountains400.jpeg" alt="" />
+            <img className={css(styles.cover)} src="../../img/blueMountains400.jpeg" alt="" />
             <div className={css(styles.figcaption)}>
               <h1>Kyrre Laugerud Moe</h1>
               <p>utvikler</p>
             </div>
             <div className={css(styles.profile)}>
-              <img className={css(styles.profilePic)} src="../img/winning_cropped.jpg" alt="" />
+              <img className={css(styles.profilePic)} src="../../img/winning_cropped.jpg" alt="" />
             </div>
           </div>
           <div className={css(styles.content)}>
+            <Meny/>
             {this.props.children}
           </div>
         </div>
     );
   }
 }
+
 
 const styles = StyleSheet.create({
   header: {
@@ -38,7 +41,7 @@ const styles = StyleSheet.create({
       'font-weight': '300',
       'margin-top': '0.5em',
     },
-    marginBottom: '4rem',
+    marginBottom: '1rem',
   },
   cover: {
     'clip-path': 'polygon(0 0, 100% 0, 100% 90%, 0 75%)',
