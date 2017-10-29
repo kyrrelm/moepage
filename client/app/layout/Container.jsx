@@ -12,12 +12,10 @@ export default class Container extends React.Component {
               <h1>Kyrre Laugerud Moe</h1>
               <p>utvikler</p>
             </div>
-            <div className={css(styles.profile)}>
-              <img className={css(styles.profilePic)} src="../../img/winning_cropped.jpg" alt="" />
-            </div>
+            <img className={css(styles.profilePic)} src="../../img/winning_cropped.jpg" alt="" />
           </div>
+          <Meny/>
           <div className={css(styles.content)}>
-            <Meny/>
             {this.props.children}
           </div>
         </div>
@@ -41,12 +39,13 @@ const styles = StyleSheet.create({
       'font-weight': '300',
       'margin-top': '0.5em',
     },
-    marginBottom: '2rem',
+    paddingBottom: '5rem',
+    marginBottom: '3rem',
   },
   cover: {
     'clip-path': 'polygon(0 0, 100% 0, 100% 95%, 0 80%)',
   },
-  profile: {
+  profilePic: {
     border: '3px solid white',
     position: 'absolute',
     left: '3rem',
@@ -54,8 +53,6 @@ const styles = StyleSheet.create({
     '@media (max-width: 750px)': {
       visibility: 'hidden',
     },
-  },
-  profilePic: {
     width: 'auto',
     height: '200px',
   },

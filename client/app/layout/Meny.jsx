@@ -28,8 +28,12 @@ const Meny = () => {
 
 const styles = StyleSheet.create({
   meny: {
-    marginBottom: '5rem',
-    marginRight: '-5rem',
+    paddingBottom: '5rem',
+    paddingLeft: '20rem',
+    paddingRight: '-5rem',
+    left: 0,
+    top: '25rem',
+    position: 'absolute',
   },
   menyIcon: {
     height: '32px',
