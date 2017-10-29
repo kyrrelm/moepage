@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     left: '3rem',
     bottom: 0,
-    '@media (max-width: 750px)': {
+    '@media (max-width: 850px)': {
       visibility: 'hidden',
     },
     width: 'auto',
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   figcaption: {
     left: '50%',
     position: 'absolute',
-    top: '40%',
+    top: '30%',
     transform: 'translate(-50%, -50%)',
     width: '100%',
   },

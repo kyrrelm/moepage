@@ -28,24 +28,30 @@ const Meny = () => {
 
 const styles = StyleSheet.create({
   meny: {
-    paddingBottom: '5rem',
     paddingLeft: '20rem',
-    paddingRight: '-5rem',
+    paddingRight: '2rem',
     left: 0,
-    top: '25rem',
-    position: 'absolute',
+    bottom: '7rem',
+    position: 'relative',
+    display: 'flex',
+    '@media (max-width: 850px)': {
+      paddingLeft: '2rem',
+    },
+
   },
   menyIcon: {
     height: '32px',
     paddingRight: '0.5rem',
     position: 'relative',
-    top: '5px',
+    top: '2px',
   },
   menyElement: {
+    minWidth: '170px',
+    flexBasis: '250px',
+    display: 'inline-flex',
     color: 'inherit',
     textDecoration: 'inherit',
     cursor: 'pointer',
-    marginRight: '5rem',
   },
   h1: {
     'font-size': '32px',
