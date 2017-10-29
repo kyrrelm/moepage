@@ -1,6 +1,7 @@
 const path = require('path');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './index.html',
@@ -43,7 +44,14 @@ module.exports = {
         options: {
           name: 'fonts/[name].[ext]',
         }
-      }
+      },
+      {
+        test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[hash].[ext]',
+        },
+      },
     ]
   },
 
@@ -52,7 +60,8 @@ module.exports = {
   },
 
   plugins: [
-      HtmlWebpackPluginConfig,
-      new ExtractTextPlugin("styles.css")
+    HtmlWebpackPluginConfig,
+    new ExtractTextPlugin("styles.css"),
+    new CopyWebpackPlugin([{ from: 'img', to: 'img'} ]),
   ]
 };
