@@ -37,6 +37,11 @@ const styles = StyleSheet.create({
     '@media (max-width: 850px)': {
       paddingLeft: '2rem',
     },
+    '@media (max-width: 570px)': {
+      flexDirection: 'column',
+      bottom: '10rem',
+      marginBottom: '-5rem',
+    },
 
   },
   menyIcon: {
@@ -52,6 +57,9 @@ const styles = StyleSheet.create({
     color: 'inherit',
     textDecoration: 'inherit',
     cursor: 'pointer',
+    '@media (max-width: 570px)': {
+      flexBasis: 'auto',
+    },
   },
   h1: {
     'font-size': '32px',
