@@ -10,7 +10,7 @@ export default class Container extends React.Component {
             <img className={css(styles.cover)} src="../../img/blueMountains400.jpeg" alt="" />
             <div className={css(styles.figcaption)}>
               <h1>Kyrre Laugerud Moe</h1>
-              <p>utvikler</p>
+              <p>developer</p>
             </div>
             <img className={css(styles.profilePic)} src="../../img/winning_cropped.jpg" alt="" />
           </div>
