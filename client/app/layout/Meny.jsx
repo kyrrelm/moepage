@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     paddingLeft: '20rem',
     paddingRight: '2rem',
     left: 0,
-    bottom: '7rem',
+    bottom: '6rem',
     position: 'relative',
     display: 'flex',
     '@media (max-width: 850px)': {

@@ -42,16 +42,16 @@ const styles = StyleSheet.create({
       'margin-top': '0.5em',
     },
     paddingBottom: '5rem',
-    marginBottom: '3rem',
+    marginBottom: '1rem',
   },
   cover: {
-    'clip-path': 'polygon(0 0, 100% 0, 100% 95%, 0 80%)',
+    'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 75%)',
   },
   profilePic: {
     border: '3px solid white',
     position: 'absolute',
     left: '3rem',
-    bottom: 0,
+    bottom: '2rem',
     '@media (max-width: 850px)': {
       visibility: 'hidden',
     },
