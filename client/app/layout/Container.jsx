@@ -1,18 +1,20 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Meny from './Meny.jsx';
+import background from "../../img/blueMountains400.jpeg";
+import profilePic from "../../img/winning_cropped.jpg";
 
 export default class Container extends React.Component {
   render() {
     return (
         <div >
           <div className={css(styles.header)}>
-            <img className={css(styles.cover)} src="../../img/blueMountains400.jpeg" alt="" />
+            <img className={css(styles.cover)} src={background} alt="" />
             <div className={css(styles.figcaption)}>
               <h1>Kyrre Laugerud Moe</h1>
               <p>developer</p>
             </div>
-            <img className={css(styles.profilePic)} src="../../img/winning_cropped.jpg" alt="" />
+            <img className={css(styles.profilePic)} src={profilePic} alt="" />
           </div>
           <Meny/>
           <div className={css(styles.content)}>

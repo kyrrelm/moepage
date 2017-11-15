@@ -1,23 +1,26 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
+import githubImg from "../../img/github.svg";
+import linkedinImg from "../../img/linkedin.svg";
+import facebookImg from "../../img/facebook.svg";
 
 const Meny = () => {
   return (
       <div className={css(styles.meny)}>
         <a href="https://github.com/kyrrelm" className={css(styles.menyElement)}>
-          <img src="../../img/github.svg" alt="" className={css(styles.menyIcon)}/>
+          <img src={githubImg} alt="" className={css(styles.menyIcon)}/>
           <h1 className={css(styles.h1)}>
             Github
           </h1>
         </a>
         <a href="https://www.linkedin.com/in/kyrre-laugerud-moe" className={css(styles.menyElement)}>
-          <img src="../../img/linkedin.svg" alt="" className={css(styles.menyIcon)}/>
+          <img src={linkedinImg} alt="" className={css(styles.menyIcon)}/>
           <h1 className={css(styles.h1)}>
             LinkedIn
           </h1>
         </a>
         <a href="https://www.facebook.com/kyrre.l.moe" className={css(styles.menyElement)}>
-          <img src="../../img/facebook.svg" alt="" className={css(styles.menyIcon)}/>
+          <img src={facebookImg} alt="" className={css(styles.menyIcon)}/>
           <h1 className={css(styles.h1)}>
             Facebook
           </h1>
