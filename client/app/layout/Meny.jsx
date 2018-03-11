@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     '@media (max-width: 570px)': {
       flexDirection: 'column',
       bottom: '10rem',
-      marginBottom: '-5rem',
+      marginBottom: '-8rem',
     },
 
   },
@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     cursor: 'pointer',
     '@media (max-width: 570px)': {
       flexBasis: 'auto',
+      marginBottom: '1rem',
     },
   },
   h1: {
