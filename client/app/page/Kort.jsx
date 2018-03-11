@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, css } from 'aphrodite';
 
-const Kort = ({ title, children }) => {
+const Kort = ({ title, children, url }) => {
   return (
-      <a href="http://nextdep.kyrre.moe" className={css(styles.kort)}>
+      <a href={url} className={css(styles.kort)}>
         <h2>
           {title}
         </h2>
@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
 
 Kort.propTypes = {
   title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
   children: PropTypes.object.isRequired,
 };
 
